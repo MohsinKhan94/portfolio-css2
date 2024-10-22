@@ -1,0 +1,115 @@
+/* Section and Container Styling */
+.contact-section {
+  color: #E0FFFF;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1C1C1E;
+  background-image: linear-gradient(135deg, rgba(255,255,255,0.05) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0.05) 75%, transparent 75%, transparent);
+  background-size: 50px 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header Styles */
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #E0FFFF;
+}
+
+@media (min-width: 640px) {
+  .contact-header h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #E0FFFF;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  background-color: #2C2C2E;
+  border: 1px solid #39FF14;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  outline: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  background-color: #3A3A3C;
+  border-color: #9B51E0;
+  box-shadow: 0 0 0 2px #9B51E0;
+}
+
+.textarea-field {
+  height: 8rem;
+  resize: none;
+}
+
+/* Button Styling */
+.submit-button {
+  background-color: #39FF14;
+  color: #1C1C1E;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+.submit-button:hover {
+  background-color: #9B51E0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
